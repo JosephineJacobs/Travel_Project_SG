@@ -1,6 +1,16 @@
-container {
+.container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 header {
@@ -12,8 +22,7 @@ header {
   padding: 250px;
 }
 
-h1 {
-  font-size: 80px;
+header h1 {
   font-family: "Dancing Script", cursive;
   font-style: normal;
   line-height: 1.5;
@@ -22,8 +31,7 @@ h1 {
   margin: 0;
 }
 
-h2 {
-  font-size: 24px;
+header h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
@@ -53,4 +61,43 @@ p {
   color: rgb(252, 251, 250);
   line-height: 1.5;
   margin: 0;
+}
+
+footer {
+  color: rgb(252, 251, 250);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../Images/footer_mbs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: 10;
+  font-style: Light;
+}
+footer li {
+  list-style: none;
+}
+footer ul {
+  padding: 0;
+}
+footer a {
+  color: aliceblue;
+}
+footer p {
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+  header h2 {
+    font-size: 80px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
 }
