@@ -10,6 +10,7 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 .grid {
@@ -23,6 +24,7 @@ section {
 
 .grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
+  padding: 20px;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
@@ -30,7 +32,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 140px;
+  padding: 250px;
   color: white;
 }
 
@@ -50,6 +52,51 @@ header h2 {
   margin: 0;
   padding: 10px;
 }
+header h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 1.5;
+  margin: 0;
+  padding: 10px;
+}
+header a {
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 1.5;
+  margin: 0;
+  color: white;
+  padding: 7px;
+}
+
+main {
+  background-color: white;
+  padding: 10px;
+}
+
+.SGP-photo {
+  border-radius: 10px;
+  max-width: 100%;
+}
+main h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 1.5;
+  margin: 0;
+}
+main p {
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 20px 0;
+  margin: 0;
+}
 
 footer {
   color: rgb(24, 23, 23);
@@ -65,46 +112,11 @@ footer {
   font-weight: 200;
   font-size: 12px;
   font-style: normal;
-  padding: 10px 0;
-}
-
-main {
-  background-color: white;
-}
-
-.SGP-photo {
-  border-radius: 10px;
-}
-main h1 {
-  font-family: "Dancing Script", cursive;
-  font-size: 30px;
-  font-style: normal;
-  line-height: 1.5;
-  margin: 0;
-}
-main p {
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  text-align: justify;
-  line-height: 1.5;
-  padding: 10px;
-  margin: 0;
-}
-main a {
-  font-size: 13px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  line-height: 1.5;
-  margin: 0;
-  color: black;
-  padding: 7px;
+  padding: 0 8px 0 8px;
 }
 
 footer h3 {
-  padding: 0px 8px 0px 8px;
+  padding: 5px;
 }
 footer li {
   list-style: none;
@@ -133,6 +145,13 @@ footer p {
   }
   header h2 {
     font-size: 20px;
+  }
+  header h3 {
+    font-size: 10px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
   }
 }
 
