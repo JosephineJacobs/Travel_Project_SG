@@ -6,11 +6,19 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+.text-center {
+  text-align: center;
+}
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+
+section.secondary {
+  background-color: bisque;
+  border-radius: 10px;
 }
 
 .grid {
@@ -92,7 +100,7 @@ main p {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
-  text-align: justify;
+  text-align: left;
   line-height: 1.5;
   padding: 20px 0;
   margin: 0;
