@@ -1,87 +1,94 @@
+body {
+  background-color: black;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
 
 section {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr 2fr;
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../Images/SGP_1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 250px;
+  padding: 140px;
+  color: white;
 }
 
 header h1 {
   font-family: "Dancing Script", cursive;
+  font-size: 80px;
   font-style: normal;
   line-height: 1.5;
-  text-indent: 5%;
-  color: rgb(252, 251, 250);
-  margin: 0;
+  margin: 0 auto;
 }
 
 header h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
-  color: rgb(252, 251, 250);
   line-height: 1.5;
   margin: 0;
   padding: 15px;
 }
 
-a {
-  font-size: 12px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  color: rgb(252, 251, 250);
-  line-height: 1.5;
-  margin: 0;
-  padding: 10px;
-}
-
-p {
+header a {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
-  text-align: justify;
-  color: rgb(252, 251, 250);
   line-height: 1.5;
+  margin: 0;
+  color: white;
+  padding: 5px;
+}
+
+header p {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 20px;
   margin: 0;
 }
 
 footer {
   color: rgb(9, 9, 9);
+  text-align: center;
   background-image: linear-gradient(
       rgba(241, 236, 236, 0.669),
       rgba(241, 236, 236, 0.669)
     ),
-    url("../Images/footer.png");
+    url("../Images/footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
   font-family: "Rubik", sans-serif;
-  font-weight: 10;
+  font-weight: 10px;
   font-style: Light;
+}
+
+footer h3 {
+  padding: 5px 0;
 }
 footer li {
   list-style: none;
 }
 footer ul {
-  padding: 0;
+  padding: 5px;
 }
 footer a {
   color: rgb(9, 9, 9);
@@ -93,15 +100,18 @@ footer p {
 
 @media (max-width: 960px) {
   header {
-    padding: 60px 0;
+    padding: 40px 0;
   }
   header h1 {
-    font-size: 24px;
+    font-size: 48px;
   }
   header h2 {
-    font-size: 80px;
+    font-size: 20px;
   }
-  header h3 {
+  header p {
     font-size: 12px;
+  }
+  header a {
+    font-size: 10px;
   }
 }
