@@ -46,6 +46,7 @@ section.secondary {
   background-color: white;
   margin: 5px;
   padding: 5px;
+  max-height: 850px;
 }
 .card-header.grip {
   grid-gap: 0;
@@ -132,7 +133,6 @@ main {
 }
 .SG-photo {
   width: 100%;
-  
 }
 .img-responsive {
   width: 200%;
